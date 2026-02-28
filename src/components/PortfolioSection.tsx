@@ -9,6 +9,16 @@ import delara7 from "@/assets/delara-7.png";
 import veralis1 from "@/assets/veralis-1.png";
 import veralis2 from "@/assets/veralis-2.png";
 import veralis3 from "@/assets/veralis-3.png";
+import veralis4 from "@/assets/veralis-4.png";
+import veralis5 from "@/assets/veralis-5.png";
+import veralis6 from "@/assets/veralis-6.png";
+import veralis7 from "@/assets/veralis-7.png";
+import veralis8 from "@/assets/veralis-8.png";
+import holiva1 from "@/assets/holiva-1.png";
+import holiva2 from "@/assets/holiva-2.png";
+import holiva3 from "@/assets/holiva-3.png";
+import holiva4 from "@/assets/holiva-4.png";
+import holiva5 from "@/assets/holiva-5.png";
 
 const projects = [
   {
@@ -71,9 +81,69 @@ const projects = [
     category: "Veralis",
     description: "Création d'un visuel publicitaire vibrant et dynamique pour une campagne réseaux sociaux.",
   },
+  {
+    image: veralis4,
+    title: "Veralis — Duo Produit & Packaging",
+    category: "Veralis",
+    description: "Mise en scène harmonieuse du flacon et de son étui, mettant en avant l'univers botanique de la marque.",
+  },
+  {
+    image: veralis5,
+    title: "Veralis — Patron de Boîte",
+    category: "Veralis",
+    description: "Conception technique du packaging déplié avec face avant et arrière, intégrant l'histoire de la marque.",
+  },
+  {
+    image: veralis6,
+    title: "Veralis — Carte de Visite",
+    category: "Veralis",
+    description: "Design de carte de visite épuré aux tons crème et vert forêt, reflétant l'identité naturelle de la marque.",
+  },
+  {
+    image: veralis7,
+    title: "Veralis — Étiquette Ronde",
+    category: "Veralis",
+    description: "Création d'une étiquette produit circulaire avec illustrations botaniques pour un sachet d'aloe vera bio.",
+  },
+  {
+    image: veralis8,
+    title: "Veralis — Sachet Infusion",
+    category: "Veralis",
+    description: "Design de packaging transparent avec étiquette ovale, mettant en avant le produit naturel et ses vertus.",
+  },
+  {
+    image: holiva1,
+    title: "Holiva — Carte de Visite",
+    category: "Holiva",
+    description: "Identité visuelle vibrante aux dégradés chauds, alliant modernité et esprit naturel pour une marque de jus.",
+  },
+  {
+    image: holiva2,
+    title: "Holiva — Campagne Produit",
+    category: "Holiva",
+    description: "Visuel publicitaire éclatant mettant en scène le jus exotique avec des fruits frais et un univers coloré.",
+  },
+  {
+    image: holiva3,
+    title: "Holiva — Flyer Lancement",
+    category: "Holiva",
+    description: "Création d'un flyer promotionnel captivant pour le lancement du nouveau jus kiwano, pitahaya & mangue.",
+  },
+  {
+    image: holiva4,
+    title: "Holiva — Affiche Tropicale",
+    category: "Holiva",
+    description: "Affiche grand format aux couleurs solaires, célébrant l'explosion de fraîcheur tropicale de la gamme.",
+  },
+  {
+    image: holiva5,
+    title: "Holiva — Packaging Doypack",
+    category: "Holiva",
+    description: "Design de packaging doypack aux dégradés mangue-myrtille, évoquant gourmandise et naturalité.",
+  },
 ];
 
-const categories = ["Tous", "Délara", "Veralis"];
+const categories = ["Tous", "Délara", "Veralis", "Holiva"];
 
 const PortfolioSection = () => {
   const [active, setActive] = useState("Tous");
