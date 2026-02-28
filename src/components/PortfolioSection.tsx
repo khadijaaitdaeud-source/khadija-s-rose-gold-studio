@@ -1,21 +1,79 @@
 import { useState } from "react";
-import projectLogo from "@/assets/project-logo.webp";
-import projectBranding from "@/assets/project-branding.webp";
-import projectSocial from "@/assets/project-social.webp";
-import projectPrint from "@/assets/project-print.webp";
-import projectPackaging from "@/assets/project-packaging.webp";
-import projectEditorial from "@/assets/project-editorial.webp";
+import delara1 from "@/assets/delara-1.png";
+import delara2 from "@/assets/delara-2.png";
+import delara3 from "@/assets/delara-3.png";
+import delara4 from "@/assets/delara-4.png";
+import delara5 from "@/assets/delara-5.png";
+import delara6 from "@/assets/delara-6.png";
+import delara7 from "@/assets/delara-7.png";
+import veralis1 from "@/assets/veralis-1.png";
+import veralis2 from "@/assets/veralis-2.png";
+import veralis3 from "@/assets/veralis-3.png";
 
 const projects = [
-  { image: projectLogo, title: "Luxury Brand", category: "Logo Design", },
-  { image: projectBranding, title: "Prima Identité", category: "Identité Visuelle", },
-  { image: projectSocial, title: "Social Templates", category: "Réseaux Sociaux", },
-  { image: projectPrint, title: "Nuna Ruum Event", category: "Print Design", },
-  { image: projectPackaging, title: "Cosmetics Line", category: "Packaging", },
-  { image: projectEditorial, title: "Editorial Spread", category: "Design Éditorial", },
+  {
+    image: delara1,
+    title: "Délara — Éclat Floral",
+    category: "Délara",
+    description: "Mise en scène lumineuse et raffinée pour un parfum d'exception, sublimé par des accents floraux délicats.",
+  },
+  {
+    image: delara2,
+    title: "Délara — L'Essence Captivante",
+    category: "Délara",
+    description: "Direction artistique sombre et cinématographique capturant l'intensité et le mystère du parfum.",
+  },
+  {
+    image: delara3,
+    title: "Délara — Prestige Émeraude",
+    category: "Délara",
+    description: "Identité visuelle luxueuse avec carte de visite assortie, alliant vert profond et finitions dorées.",
+  },
+  {
+    image: delara4,
+    title: "Délara — Rouge Passion",
+    category: "Délara",
+    description: "Photographie produit sensuelle aux tons bordeaux, évoquant l'audace et la féminité.",
+  },
+  {
+    image: delara5,
+    title: "Délara — Élégance Nude",
+    category: "Délara",
+    description: "Campagne épurée et naturelle, mettant en valeur la beauté brute et l'authenticité de la marque.",
+  },
+  {
+    image: delara6,
+    title: "Délara — Carte de Visite",
+    category: "Délara",
+    description: "Design de carte de visite premium avec typographie dorée sur fond vert émeraude.",
+  },
+  {
+    image: delara7,
+    title: "Délara — Lumière Dorée",
+    category: "Délara",
+    description: "Ambiance poétique et chaleureuse, baignée de lumière naturelle pour un rendu intemporel.",
+  },
+  {
+    image: veralis1,
+    title: "Veralis — Packaging Naturel",
+    category: "Veralis",
+    description: "Conception d'un packaging écoresponsable pour une gamme d'aloe vera, alliant nature et élégance.",
+  },
+  {
+    image: veralis2,
+    title: "Veralis — Boîte Produit",
+    category: "Veralis",
+    description: "Design minimaliste et organique pour un packaging 100% naturel, fabriqué au Maroc.",
+  },
+  {
+    image: veralis3,
+    title: "Veralis — Visuel Promotionnel",
+    category: "Veralis",
+    description: "Création d'un visuel publicitaire vibrant et dynamique pour une campagne réseaux sociaux.",
+  },
 ];
 
-const categories = ["Tous", ...new Set(projects.map((p) => p.category))];
+const categories = ["Tous", "Délara", "Veralis"];
 
 const PortfolioSection = () => {
   const [active, setActive] = useState("Tous");
@@ -52,7 +110,7 @@ const PortfolioSection = () => {
           ))}
         </div>
 
-        {/* Grid - asymmetric */}
+        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((project, i) => (
             <div
@@ -67,9 +125,10 @@ const PortfolioSection = () => {
                 className="w-full h-full object-cover min-h-[280px] transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-background/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center">
+              <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center px-6 text-center">
                 <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-2">{project.category}</p>
-                <h3 className="font-display text-2xl font-bold">{project.title}</h3>
+                <h3 className="font-display text-xl font-bold mb-2">{project.title}</h3>
+                <p className="font-body text-sm text-muted-foreground leading-relaxed">{project.description}</p>
               </div>
             </div>
           ))}
