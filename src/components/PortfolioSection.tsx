@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import RozelleProjectCard, { type PortfolioVisual } from "@/components/RozelleProjectCard";
+import { rozelleProjects } from "@/lib/rozelle-projects";
 import delara1 from "@/assets/delara-1.png";
 import delara2 from "@/assets/delara-2.png";
 import delara3 from "@/assets/delara-3.png";
@@ -143,12 +146,13 @@ const projects = [
   },
 ];
 
-const categories = ["Tous", "Délara", "Veralis", "Holiva"];
+const categories = ["Tous", "Délara", "Veralis", "Holiva", "ROZELLE"];
+const allProjects: (typeof projects[number] & { details?: PortfolioVisual["details"] })[] = [...projects, ...rozelleProjects];
 
 const PortfolioSection = () => {
   const [active, setActive] = useState("Tous");
 
-  const filtered = active === "Tous" ? projects : projects.filter((p) => p.category === active);
+  const filtered = active === "Tous" ? allProjects : allProjects.filter((p) => p.category === active);
 
   return (
     <section id="portfolio" className="py-24 md:py-32 relative overflow-hidden">
@@ -166,7 +170,9 @@ const PortfolioSection = () => {
         {/* Filter */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((cat) => (
-            <button
+            <Button
+              variant="ghost"
+              aria-pressed={active === cat}
               key={cat}
               onClick={() => setActive(cat)}
               className={`font-body text-xs tracking-widest uppercase px-5 py-2 rounded-sm border transition-all duration-300 ${
@@ -176,13 +182,15 @@ const PortfolioSection = () => {
               }`}
             >
               {cat}
-            </button>
+            </Button>
           ))}
         </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((project, i) => (
+          {filtered.map((project, i) => project.details ? (
+            <RozelleProjectCard key={project.title} project={{ ...project, details: project.details }} />
+          ) : (
             <div
               key={project.title}
               className={`group relative overflow-hidden rounded-sm shadow-card ${
