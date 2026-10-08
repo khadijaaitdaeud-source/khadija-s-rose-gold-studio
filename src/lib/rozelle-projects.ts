@@ -8,6 +8,13 @@ import image7 from "@/assets/rozelle-7.jpeg.asset.json";
 import image8 from "@/assets/rozelle-8.jpeg.asset.json";
 import image9 from "@/assets/rozelle-9.jpeg.asset.json";
 import image10 from "@/assets/rozelle-10.jpeg.asset.json";
+import image11 from "@/assets/rozelle-11.jpeg.asset.json";
+import image12 from "@/assets/rozelle-12.jpeg.asset.json";
+import image13 from "@/assets/rozelle-13.jpeg.asset.json";
+import image14 from "@/assets/rozelle-14.jpeg.asset.json";
+import image15 from "@/assets/rozelle-15.jpeg.asset.json";
+import image16 from "@/assets/rozelle-16.jpeg.asset.json";
+import image17 from "@/assets/rozelle-17.jpeg.asset.json";
 import type { PortfolioVisual } from "@/components/RozelleProjectCard";
 
 export const rozelleProjects: PortfolioVisual[] = [
@@ -111,4 +118,82 @@ export const rozelleProjects: PortfolioVisual[] = [
       skills: ["Composition pour communication sociale", "Contraste chromatique", "Mise en valeur de supports de marque", "Cadrage et hiérarchie visuelle"],
     },
   },
+  {
+    image: image11.url, category: "ROZELLE", title: "ROZELLE — Rose Glow, le sérum en lumière",
+    description: "Un flacon rose à pipette se dresse sur un socle à deux niveaux, devant un cercle clair et des lignes verticales. À gauche, une colonne de textes et de pictogrammes présente le sérum Rose Glow.",
+    details: {
+      concept: "Le cercle derrière le flacon peut évoquer une aura lumineuse ; la rose et les pétales relient le produit à l’identité florale. Cette lecture décrit l’effet de la composition, sans présumer de l’intention initiale.",
+      choices: "Le format carré oppose une colonne informative à gauche au produit agrandi à droite. Les roses clairs et soutenus sont ponctués de bordeaux pour le logo et les textes, d’un collier métallique et d’une pipette blanche. Le cercle, les rainures verticales et le socle arrondi encadrent le flacon ; trois pictogrammes latéraux et trois signes en pied structurent les arguments.",
+      objective: "Présenter le sérum, sa contenance affichée de 30 ml et les arguments d’hydratation, d’éclat et de légèreté inscrits sur l’affiche. Les mentions « sans paraben » et « tous types de peaux » sont des messages du support, non des propriétés vérifiées ici.",
+      skills: ["Composition d’une affiche produit", "Hiérarchie texte–pictogrammes", "Mise en valeur d’un packaging", "Équilibre entre information et décor"],
+    },
+  },
+  {
+    image: image12.url, category: "ROZELLE", title: "ROZELLE — La crème en suspension",
+    description: "Un pot de crème rose couvert de gouttelettes apparaît incliné au-dessus d’un plateau réfléchissant. Un grand cercle clair et des lignes verticales donnent de la profondeur à cette affiche de soin.",
+    details: {
+      concept: "La suspension apparente et l’inclinaison du pot peuvent suggérer légèreté et mouvement. Les gouttelettes font visuellement écho au vocabulaire de l’hydratation, sans démontrer l’efficacité du produit.",
+      choices: "Le format vertical réserve le haut au logotype bordeaux et au nom « Rose Hydrating Face Cream ». Le produit domine la partie inférieure ; son reflet accompagne une diagonale, tandis que le cercle et les filets verticaux organisent l’arrière-plan. Une palette rose ton sur ton et une typographie à empattements prolongent l’identité de marque.",
+      objective: "Mettre en avant le conditionnement de la crème et sa quantité affichée de 50 g. Les formulations sur l’extrait de rose et la douceur de la peau sont décrites comme arguments visibles, sans validation de la composition ou des résultats.",
+      skills: ["Composition produit en diagonale", "Hiérarchie d’affiche verticale", "Cohérence chromatique", "Articulation entre formes, reflets et typographie"],
+    },
+  },
+  {
+    image: image13.url, category: "ROZELLE", title: "ROZELLE — Love Your Skin, énergie urbaine",
+    description: "Une silhouette en lunettes et veste rose se détache sur un décor de gratte-ciel, au-dessus d’un masque, d’un sérum, d’une crème et d’un savon. L’accroche « LOVE YOUR Skin » mêle grandes capitales et écriture expressive.",
+    details: {
+      concept: "L’association de la ville, de la mode et du soin peut évoquer une communication beauté expressive. Le cœur accompagné d’un compteur et les phrases manuscrites empruntent des codes sociaux ; aucune diffusion ni performance de campagne n’est confirmée.",
+      choices: "Le rose vif unit la veste, les produits et le décor urbain. Le blanc donne de la visibilité aux grandes capitales, aux icônes et aux contacts ; le bordeaux porte le logo et le mot « Skin ». Le portrait occupe le haut droit, les produits forment une base étagée, et les roses et pétales lient les différents plans.",
+      objective: "Présenter plusieurs soins sous une accroche de valorisation de la peau et rendre visibles les messages « Hydrate », « Nourish » et « Glow ». Les coordonnées imprimées restent celles du visuel fourni et ne deviennent pas les contacts du portfolio.",
+      skills: ["Composition publicitaire multisujet", "Association portrait–gamme produit", "Contraste typographique", "Organisation d’accroches, pictogrammes et contacts"],
+    },
+  },
+  {
+    image: image14.url, category: "ROZELLE", title: "ROZELLE — La crème en page beauté",
+    description: "Une double page de magazine associe un portrait avec un geste d’application à une présentation de crème, de rose et de texture. Le logo domine la page droite, suivie de textes et de trois bénéfices illustrés.",
+    details: {
+      concept: "Le rapprochement entre geste de soin, texture et produit peut se lire comme une présentation éditoriale d’un rituel beauté. La scène est une mise en situation de magazine, sans preuve d’une publication réelle.",
+      choices: "La page gauche, plus sombre et partiellement cadrée, contraste avec le rose pâle de la page droite. Le grand logo bordeaux introduit une hiérarchie de titres à empattements et de textes plus petits. La rose et le pot occupent la droite ; en pied, trois colonnes séparées de filets regroupent les icônes « Hydrate », « Nourrit » et « Illumine ».",
+      objective: "Présenter la crème dans un contexte de lecture éditoriale et organiser ses arguments de soin. L’extrait de rose, l’acide hyaluronique et les effets annoncés sont des mentions du visuel, pas des informations sur la formule vérifiées indépendamment.",
+      skills: ["Mise en page éditoriale", "Hiérarchie de lecture", "Association produit–texture–portrait", "Structuration de bénéfices en colonnes"],
+    },
+  },
+  {
+    image: image15.url, category: "ROZELLE", title: "ROZELLE — Une gamme à la une",
+    description: "Un magazine ouvert présente le sérum, le masque et la crème sur un tissu rose, avec une rose en arrière-plan. Une accroche courte et trois pictogrammes accompagnent la gamme sous une grande signature de marque.",
+    details: {
+      concept: "La réunion de trois conditionnements peut évoquer une même famille de soins, tandis que le magazine inscrit l’ensemble dans un univers éditorial. Cette interprétation ne confirme ni un rituel recommandé ni une parution.",
+      choices: "Le tube vertical, plus haut, équilibre le sérum à gauche et le pot à droite. Les emballages roses portent les inscriptions bordeaux ; le satin apporte des plis souples autour des volumes. La page enroulée à gauche, les ombres végétales et les fleurs extérieures donnent un cadre matériel à la présentation. Les icônes du bas sont séparées par des filets fins.",
+      objective: "Montrer la cohérence de la gamme et associer son identité aux mots visibles « Hydrate », « Nourrit » et « Illumine ». Le support communique ces promesses sans en apporter de validation.",
+      skills: ["Présentation éditoriale d’une gamme", "Composition de produits de hauteurs différentes", "Cohérence de packaging", "Articulation entre accroche et pictogrammes"],
+    },
+  },
+  {
+    image: image16.url, category: "ROZELLE", title: "ROZELLE — Les soins en rubans",
+    description: "Un savon, un sérum, un pot de crème et un tube de masque sont suspendus à des rubans roses noués. Le logo bordeaux et sa signature occupent le bas de cette composition sur fond rose clair.",
+    details: {
+      concept: "Les nœuds satinés peuvent évoquer l’univers du cadeau, tandis que la suspension transforme les produits en éléments décoratifs. Aucune occasion commerciale ni offre de coffret n’est confirmée.",
+      choices: "Quatre rubans verticaux guident le regard vers des produits placés à des hauteurs différentes. Le savon incliné contraste avec les autres volumes plus droits ; les boucles des nœuds apportent des courbes. Le fond clair, les emballages roses et le grand logo bordeaux composent une palette cohérente, sans texte promotionnel supplémentaire.",
+      objective: "Donner une visibilité commune aux quatre produits tout en mettant la signature ROZELLE au premier plan. La composition privilégie la reconnaissance de marque plutôt qu’une explication détaillée des soins.",
+      skills: ["Composition de gamme en rythme décalé", "Équilibre entre volumes et rubans", "Hiérarchie de marque", "Gestion des espaces et des contrastes"],
+    },
+  },
+  {
+    image: image17.url, category: "ROZELLE", title: "ROZELLE — L’essence de la rose, récit éditorial",
+    description: "Une page de magazine combine une rose en gros plan, des textures de soin et une pipette avec l’accroche « L’essence de la rose, la beauté en vous ». Des blocs roses et bordeaux alternent images, textes et citation.",
+    details: {
+      concept: "La proximité des pétales, des gouttelettes et des textures peut suggérer un lien sensoriel entre la fleur et le soin. La citation et le vocabulaire de douceur construisent un récit visible, sans confirmer les ingrédients ni l’intention du brief.",
+      choices: "Le grand logo et l’accroche à empattements introduisent une colonne de lecture à gauche, face à une grande image de rose et de texture à droite. En bas, une petite image de pipette et deux aplats colorés forment une séquence de blocs. Les pictogrammes s’alignent verticalement, tandis que la page gauche bordeaux et les roses extérieures encadrent l’ensemble.",
+      objective: "Présenter l’univers de marque par un récit éditorial associant nature, soin et douceur. Les formulations sur les soins et les formules restent des messages imprimés, et la mise en situation ne prouve pas une publication en magazine.",
+      skills: ["Composition éditoriale en colonnes", "Association images–citation–texte", "Hiérarchie typographique", "Rythme de blocs et cohérence chromatique"],
+    },
+  },
 ];
+
+export const rozelleProject = {
+  title: "ROZELLE — Une touche de rose",
+  category: "ROZELLE",
+  cover: image6.url,
+  description: "Une identité florale déclinée en soins, emballages, papeterie et compositions publicitaires et éditoriales.",
+  visuals: rozelleProjects,
+};
