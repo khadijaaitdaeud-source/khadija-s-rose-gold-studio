@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import RozelleProjectCard from "@/components/RozelleProjectCard";
+import RozelleProjectCard, { type PortfolioVisual } from "@/components/RozelleProjectCard";
 import { rozelleProjects } from "@/lib/rozelle-projects";
 import delara1 from "@/assets/delara-1.png";
 import delara2 from "@/assets/delara-2.png";
@@ -147,7 +147,7 @@ const projects = [
 ];
 
 const categories = ["Tous", "Délara", "Veralis", "Holiva", "ROZELLE"];
-const allProjects = [...projects, ...rozelleProjects];
+const allProjects: (typeof projects[number] & { details?: PortfolioVisual["details"] })[] = [...projects, ...rozelleProjects];
 
 const PortfolioSection = () => {
   const [active, setActive] = useState("Tous");
@@ -188,8 +188,8 @@ const PortfolioSection = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((project, i) => "details" in project ? (
-            <RozelleProjectCard key={project.title} project={project} />
+          {filtered.map((project, i) => project.details ? (
+            <RozelleProjectCard key={project.title} project={{ ...project, details: project.details }} />
           ) : (
             <div
               key={project.title}
