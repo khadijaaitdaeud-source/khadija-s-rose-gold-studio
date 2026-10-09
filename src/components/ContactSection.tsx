@@ -1,5 +1,8 @@
 import { Mail, Instagram, Linkedin, Dribbble } from "lucide-react";
 
+const EMAIL = "khadija.design.creative@gmail.com";
+const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Demande de projet - Khadija Ait Daoud")}`;
+
 const ContactSection = () => {
   return (
     <section id="contact" className="py-24 md:py-32 bg-secondary/30 relative overflow-hidden">
@@ -18,12 +21,21 @@ const ContactSection = () => {
           </p>
 
           <a
-            href="mailto:contact@khadija-design.com"
-            className="inline-flex items-center gap-3 bg-gradient-rosegold text-primary-foreground font-body text-sm tracking-widest uppercase px-10 py-4 rounded-sm shadow-rosegold hover:opacity-90 transition-opacity duration-300 mb-12"
+            href={MAILTO}
+            className="inline-flex items-center gap-3 bg-gradient-rosegold text-primary-foreground font-body text-sm tracking-widest uppercase px-10 py-4 rounded-sm shadow-rosegold hover:opacity-90 transition-opacity duration-300 mb-8"
           >
             <Mail size={18} />
             Me contacter
           </a>
+
+          <div className="mb-12">
+            <a
+              href={MAILTO}
+              className="font-body text-sm tracking-wide text-muted-foreground underline underline-offset-4 decoration-border hover:text-primary hover:decoration-primary transition-colors duration-300"
+            >
+              {EMAIL}
+            </a>
+          </div>
 
           <div className="flex items-center justify-center gap-6 mt-4">
             {[
