@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import RozelleProjectCard, { type PortfolioVisual } from "@/components/RozelleProjectCard";
 import { rozelleProjects } from "@/lib/rozelle-projects";
+import { pilotanProjects } from "@/lib/pilotan-projects";
 import delara1 from "@/assets/delara-1.png";
 import delara2 from "@/assets/delara-2.png";
 import delara3 from "@/assets/delara-3.png";
@@ -146,8 +147,8 @@ const projects = [
   },
 ];
 
-const categories = ["Tous", "Délara", "Veralis", "Holiva", "ROZELLE"];
-const allProjects: (typeof projects[number] & { details?: PortfolioVisual["details"] })[] = [...projects, ...rozelleProjects];
+const categories = ["Tous", "Délara", "Veralis", "Holiva", "ROZELLE", "PILOTAN"];
+const allProjects: (typeof projects[number] & { details?: PortfolioVisual["details"] })[] = [...projects, ...rozelleProjects, ...pilotanProjects];
 
 const PortfolioSection = () => {
   const [active, setActive] = useState("Tous");
