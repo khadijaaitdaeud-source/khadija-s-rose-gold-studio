@@ -37,9 +37,7 @@ const HeroSection = () => {
           className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none mb-6 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
-          Khadija
-          <br />
-          <span className="text-gradient-rosegold">Ait Daoud</span>
+          douja_by_design
         </h1>
 
         <div
