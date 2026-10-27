@@ -8,3 +8,6 @@
 # PILOTAN
 - [x] Add five uploaded originals with individual French titles and descriptions using the unchanged HOLIVA/VERALIS presentation.
 - [x] Verify PILOTAN and existing filters; leave website unpublished.
+
+# REDESIGN (cancelled)
+- [x] User cancelled the douja_by_design redesign before it was finished; all files restored byte-identically to the pre-redesign saved version (design, colors, typography, projects and functionality unchanged).
