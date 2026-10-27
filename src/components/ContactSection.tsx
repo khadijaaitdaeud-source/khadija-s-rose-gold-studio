@@ -1,7 +1,7 @@
 import { Mail, Instagram, Linkedin, Dribbble } from "lucide-react";
 
 const EMAIL = "khadija.design.creative@gmail.com";
-const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Demande de projet - Khadija Ait Daoud")}`;
+const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Demande de projet - douja_by_design")}`;
 
 const ContactSection = () => {
   return (
@@ -59,7 +59,7 @@ const ContactSection = () => {
       {/* Footer */}
       <div className="container mx-auto px-6 mt-20 pt-8 border-t border-border">
         <p className="font-body text-xs text-muted-foreground text-center tracking-widest">
-          © 2026 Khadija Ait Daoud — Tous droits réservés
+          © 2026 douja_by_design — Tous droits réservés
         </p>
       </div>
     </section>
